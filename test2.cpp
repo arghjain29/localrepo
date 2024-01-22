@@ -1,11 +1,23 @@
 #include<iostream>
 using namespace std;
 
-int fact(int num) {
-return num * fact(num -1);
-}
+int factorial(int n);
+
 int main() {
-int num = 5;
-cout<< fact(num);
-return 0;
+
+  int n;
+
+  cout << "Enter a positive integer: ";
+  cin >> n;
+
+  cout << "Factorial of " << n << " = " << factorial(n);
+
+  return 0;
+}
+
+int factorial(int n) {
+  if(n > 1)
+    return n * factorial(n - 1);
+  else
+    return 1;
 }
