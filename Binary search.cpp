@@ -1,21 +1,18 @@
 #include <iostream>  
 using namespace std;  
 int main ()  
-{  
-    
-    int arr[10] = {23,34,42,48,58,76,77,86,89,92};
+{   
     int low, mid, end, tgt;
+    int arr[10] = {23,34,42,48,58,76,77,86,89,92};
 
     low = 0;  
     end = sizeof(arr) - 1; 
       
- 
     cout << " Define a value to be searched from sorted array: " << endl;  
     cin >> tgt;  
       
     while ( low <= end)  
     {  
-
         mid = ( low + end ) / 2;  
   
         if (arr[mid] == tgt)  
